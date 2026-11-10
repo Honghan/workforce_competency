@@ -26,5 +26,5 @@ The main finding is that headcount alone hides competency shortage risk. The thr
 - `analysis.py`: the analysis. Put the NHS files anywhere inside `data/` (unzipped CSVs or the original .zip files both work), then run `pip install pandas numpy scipy` and `python analysis.py` (add `--sensitivity` for the +/-30% weight test). It prints the headline numbers and writes `outputs/results.csv` and `outputs/heat.json`. The assumptions are at the top of the script and are labelled as guesses.
 - `data/`: your local copy of the NHS files. They are not included in this repo, to keep it small; download them from NHS England.
 
-## Publish with GitHub Pages
-Repo Settings → Pages → deploy from the main branch, root folder.
+## Online visual
+[https://honghan.github.io/workforce_competency/](https://honghan.github.io/workforce_competency/)
