@@ -21,6 +21,14 @@ The main finding is that headcount alone hides competency shortage risk. The thr
 - Hypothesis 2 mostly reflects seniority only, because `GRADE_COVERAGE` differs only by grade.
 - One month of data. Results were stable to ±30% perturbation of `W` and `q` for correlations, and for the top competency under Hypothesis 1 (93%) but not Hypothesis 2 (30%).
 
+## Competency framework 
+
+The five competency groups (invasive monitoring, difficult airway, regional/positioning, children, obstetric/gynae) were chosen by hand from the Operating Department Practitioner (ODP) competency framework. The framework file is not included in this repo. analysis.py does not read it; it only uses the five group names.
+
+Framework: ODP competency framework (enriched and formalised version, March 2025).
+
+The weights linking specialties and grades to these competencies are the author's guesses, not taken from the framework. A competency-level model of who holds which competency would replace them.
+
 ## Files
 - `index.html`: the self-contained page (no external calls).
 - `analysis.py`: the analysis. Put the NHS files anywhere inside `data/` (unzipped CSVs or the original .zip files both work), then run `pip install pandas numpy scipy` and `python analysis.py` (add `--sensitivity` for the +/-30% weight test). It prints the headline numbers and writes `outputs/results.csv` and `outputs/heat.json`. The assumptions are at the top of the script and are labelled as guesses.
